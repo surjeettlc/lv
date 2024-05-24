@@ -195,6 +195,10 @@ body{
     .btnMoreMenu{
         display: flex;
     }
+    .datetime, .cmptName, .venueName{
+        font-weight: lighter;
+        color: rgb(181, 180, 180);
+    }
    
 }
 
