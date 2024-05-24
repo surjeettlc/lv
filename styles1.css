@@ -1,0 +1,200 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin-top: 0%;
+}
+.mainContainer {
+    max-width: 1200px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    
+}
+.menuSection{
+    color: gray;
+    background-color:rgb(0, 0, 0);
+    display:flex;
+    height: 2rem;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+
+.menuSubSection1{
+    align-content: center; 
+}
+.menuSubSection2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.menuSubSection3{
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menuSubSection4{
+    width:20%;
+    align-content: center;
+    text-align: right;
+
+}
+.menuList{
+    display: flex;
+}
+.menuItem{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.btnLogin{
+    background-color: rgb(255, 208, 54);
+    font-weight : bold ;
+    font-size: medium;
+    border: none;
+    border-radius: 4px;
+
+}
+.btnSignup{
+    background-color: rgba(47, 151, 37, 0.986); 
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 4px;   
+}
+.btnMoreMenu{
+    display: none;
+    color: gray;
+    font-size: small;
+    border: 1px solid rgb(56, 56, 56);
+    background-color: transparent;
+}
+
+
+
+
+
+
+.sliderSection {
+    max-width: 1200px;
+    margin: auto;
+    color: rgb(171, 168, 168);
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+.sliderArea{
+    overflow: hidden;
+}
+.sliderList{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.btnSlideLt, .btnSlideRt{
+    font-size: x-large;
+    font-weight: bold;
+    color: gray;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.sliderItem{
+    border: 1px solid rgb(50, 50, 50);
+    background-color: rgb(19, 19, 19);
+    border-radius: 10px;
+    margin-left: 5px;
+    font-size: x-small;
+    min-width:300px;
+    max-width:300px;
+    padding-left: 5px;
+    padding-top: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.datetime, .cmptName, .venueName{
+    margin-top: 5px;
+    font-weight: lighter;
+    color: gray;
+}
+.liveIcon{
+    height:8px;
+    align-content: flex-end;
+    margin-right: 3px;
+    margin-left: 3px;
+
+}
+.dtContainer{
+    border-bottom: 1px solid rgb(39, 39, 39);
+    padding-bottom: 6px;
+    margin-right: 3px;
+    display: flex;
+    align-items: center;
+}    
+.datetime {
+    flex:80%;
+    
+}    
+
+
+.teamContainer{
+    display: flex;
+    flex: 100%;
+    margin-top: 15px;
+    align-items: center;
+    font-size: x-small;
+    font-weight: bold;
+}
+.teamAicon{
+    flex: 12%;
+    width:20px ;
+    border-radius: 50%;
+}
+.teamA{
+    flex: 70%;
+    overflow: hidden;
+    padding-left: 5px;   
+}
+.teamAscore{
+    flex: 30%;
+    padding-left: 15px;
+}
+.predictionAvail{
+    text-align: center;
+    font-size: medium;
+    border: 1px solid rgb(88, 86, 86);
+    border-radius: 4px;
+    margin:5px; 
+}
+.announcement{
+    direction: left;
+    color: gray;
+    behavior: scroll;
+}
+
+
+@media (max-width: 800px) {
+    .menuSubSection3 .menuItem {
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .menuItem {
+        display: none;
+    }
+    .btnSlideLt, .btnSlideRt, .btnLogin, .btnSignup{
+        display: none;
+    }
+    .sliderArea, .sliderItem{
+        min-width: 80%;
+        margin-right: 10px;
+    }
+    .btnMoreMenu{
+        display: flex;
+    }
+   
+}
+
