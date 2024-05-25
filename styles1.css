@@ -65,6 +65,7 @@ body{
     font-size: small;
     border: 1px solid rgb(56, 56, 56);
     background-color: transparent;
+    margin-right: 5px;
 }
 
 
@@ -85,20 +86,37 @@ body{
 }
 .sliderList{
     display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
     padding: 0;
     margin: 0;
     overflow: hidden;
-    scroll-behavior: smooth;
 }
-.btnSlideLt, .btnSlideRt{
-    font-size: x-large;
+.btnSlideLt{
+    font-size: large;
     font-weight: bold;
-    color: gray;
+    color: rgb(181, 180, 180);
     border: none;
-    background-color: transparent;
+    border-radius: 5px;
+    height: 182px;
+    border-left: 1px solid rgb(50, 50, 50);
+    background-color: rgb(19, 19, 19);
 }
-
-
+.btnSlideRt{
+    font-size: large;
+    font-weight: bold;
+    color: rgb(181, 180, 180);
+    border: none;
+    border-radius: 5px;
+    height: 182px;
+    background-color: rgb(19, 19, 19);
+    border-right: 1px solid rgb(50, 50, 50);
+    border-top: 1px solid rgb(50, 50, 50);
+    border-bottom: 1px solid rgb(50, 50, 50);
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
 
 .sliderItem{
     border: 1px solid rgb(50, 50, 50);
@@ -134,7 +152,6 @@ body{
 }    
 .datetime {
     flex:80%;
-    
 }    
 
 
@@ -166,12 +183,94 @@ body{
     border: 1px solid rgb(88, 86, 86);
     border-radius: 4px;
     margin:5px; 
+    opacity: 0.5;
 }
 .announcement{
     direction: left;
     color: gray;
     behavior: scroll;
 }
+
+
+/* schedule section starts */
+
+.scldSection{
+    color: gray;
+    max-width: 800px;
+    align-content: center;
+}
+.scldList{
+    font-size: small;
+    border-radius: 5px;
+    border:  1px solid rgb(56, 56, 56);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.scldItem{
+    border:  1px solid rgb(50, 50, 50);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgb(19, 19, 19);
+}
+.sclddtContainer{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.scldteams{
+    display: flex;
+    padding: 5px;
+    font-size: small;
+    color: gainsboro
+}
+.scldteamAcontainer{
+    flex: 50%;
+
+}
+.scldteamBcontainer{
+    flex: 50%;
+    text-align: end;
+}
+.scldtmiconnameA {
+    display: flex;
+    align-items: center;
+}
+
+.scldtmiconnameB{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sclddatetime {
+    padding-top: 5px;
+    flex: 20%;
+}
+.scldcmptName{
+    font-size: small;
+    opacity: 0.5;
+}    
+.scldvenueName{
+    font-size: small;
+    opacity: 0.5;
+}
+.scldteamBscore{
+ padding-right: 5px;
+}
+.scldteamAscore{
+    padding-left: 5px;
+}
+.scldteamAicon, .scldteamBicon{
+    width:30px ;
+    border-radius: 50%;
+}
+.scldteamA, .scldteamB{
+    opacity: 0.6;
+}
+
+
+
 
 
 @media (max-width: 800px) {
@@ -190,10 +289,12 @@ body{
     }
     .sliderArea, .sliderItem{
         min-width: 80%;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     .btnMoreMenu{
         display: flex;
+        border-radius: 3px;
+        padding: 4px;
     }
     .datetime, .cmptName, .venueName{
         font-weight: lighter;
